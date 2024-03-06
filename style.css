@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    width: 100%;
+    height: auto;
+    padding-top: 4vh;
+    padding-bottom:4vh;
+}
+
+h1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 4vh;
+    margin-top: 2vh;
+}
+
+.input{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2vh;
+}
+
+input{
+    width: 24vh;
+    height: 5vh;
+}
+
+button{
+    font-size: 2vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#tabela{
+    align-items: left;
+    display: flex;
+    gap: 4vh;
+    width: 100%;
+    border: 3px solid black;
+    flex-direction: column;
+}
+
+.btn-group{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 20vh;
+}
+
+.transform{
+    transition: ease-in-out 0.2s;
+}
+
+.transform:hover{
+    transform: scale(1.1);
+}
+
+tr{
+    display: flex;
+    gap: 15vh;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .input{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        white-space: nowrap;
+        width: 40vh;
+    }
+
+    button{
+        white-space: nowrap;
+    }
+
+    input{
+        width: 35vh;
+    }
+}
+
+.nav-links::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links:hover::after {
+    width: 100%;
+    color: black;
+}
